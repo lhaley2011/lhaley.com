@@ -1,0 +1,19 @@
+{
+  "name": "node-lhaley.com",
+  "version": "1.0.0",
+  "description": "Plain node version of lhaley.com",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^1.0.0",
+    "express": "^4.6.1"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "Lucas Haley",
+  "repository": {
+    "type": "git",
+    "url": "https://lhaley2011@bitbucket.org/lhaley2011/lhaleyapp-static.git"
+  },
+  "license": "ISC"
+}

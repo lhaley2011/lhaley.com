@@ -1,0 +1,40 @@
+<!-- views/pages/bitcoin.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head_tag_manager %>
+    <% include ../partials/head %>
+    <script src="/js/bitcoin.js"></script>
+</head>
+<body>
+    <% include ../partials/header_tag_manager %>
+    <div id="navbar">
+        <% include ../partials/header %>
+    </div>
+    <div class="body">
+      <div class="content">
+        <div class='bitcoin'>
+          <br>
+          BITCOIN
+          <br>
+          <p>
+            Current Difficulty: <div id='difficulty'></div>
+          </p>
+          <p>
+            Current Reward: <div id='reward'></div>
+          </p>
+          <script>
+            $('#difficulty').html('LOADING...');
+            $('#reward').html('LOADING...');
+            getDifficulty().done(function(difficulty) { $('#difficulty').html(difficulty); }).fail(function() {$('#difficulty').html('ERROR');});
+            getReward().done(function(reward) { $('#reward').html(reward); }).fail(function() {$('#reward').html('ERROR');});
+          </script>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+</body>
+</html>

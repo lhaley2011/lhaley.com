@@ -1,0 +1,21 @@
+.scrollToTop {
+  background: none;
+  margin: 0;
+  position: fixed;
+  bottom: 55px;
+  right: -7px;
+  width: 70px;
+  height: 70px;
+  z-index: 100;
+  display: none;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.scrollToTop:hover {
+  opacity: 1.0;
+}
+ 
+.scrollToTop i {
+  font-size: 60px;
+}

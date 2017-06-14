@@ -1,0 +1,147 @@
+<!-- views/pages/resume.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head_tag_manager %>
+		<% include ../partials/head %>
+    <link rel="stylesheet" href="/styles/exclude/resume.css">
+</head>
+<body>
+    <% include ../partials/header_tag_manager %>
+		<div id="navbar">
+        <% include ../partials/header %>
+    </div>
+    <div class="body">
+      <div class="content">
+  			<div style="overflow:auto;">
+  				<a style="float:right;" href="/resume.pdf" class="btn btn-primary" role="button" target="_blank">Download PDF</a>
+  			</div>
+  			<div class="hidden-sm-down not-visible">
+  				<a href="#" class="scrollToTop" style="display:none;"><i class="fa fa-chevron-circle-up"></i></a>
+  			</div>
+  			<div id="resumeWrapper" style="overflow:scroll; height:71vh;">
+  				<div id="summary" style="overflow:auto;">
+  					<div class="col-md-3">
+  						<h4>Summary of Qualifications:</h4>
+  					</div>
+  					<div class="col-md-6">
+  						<div>
+  							Experience includes detailed knowledge of computer programming, with education in database skills. Experience in school has developed a hardworking and driven ability which includes completing tasks in a timely manner.
+  						</div>
+  						<dl>
+  							<dt>
+  								<div>Knowledge and Skill Areas:</div>
+  							</dt>
+  							<dd>
+  								<ul>
+  									<li><span>Software development</span></li>
+  									<li><span>Object-oriented programming</span></li>
+  									<li><span>Problem analysis and resolution</span></li>
+  									<li><span>Requirement gathering and analysis</span></li>
+  									<li><span>Software testing and troubleshooting</span></li>
+  									<li><span>Technical writing skills</span></li>
+  								</ul>
+  							</dd>
+  						</dl>
+  					</div>
+  				</div>
+  				<hr/>
+  				<div id="knowledge" style="overflow:auto;">
+  					<div  class="col-md-3">
+  						<h4>Technical Knowledge and Expertise:</h4>
+  					</div>
+  					<div class="col-md-6">
+  							<dl>
+  								<dt><b>Operating Systems</b></dt>
+  								<dd>Microsoft, Macintosh, Linux, Unix</dd>
+  								<dt><b>Programming Languages</b></dt>
+  								<dd>C++, C#, Scala, Assembly, PHP, HTML, CSS</dd>
+  								<dt><b>Development Tools</b></dt>
+  								<dd>Microsoft Visual Studios, Xcode, IntelliJ Idea</dd>
+  								<dt><b>Certifications</b></dt>
+  								<dd>Microsoft Office Specialist 2003 in Word and Excel</dd>
+  							</dl>
+  						</div>
+  				</div>
+  				<hr/>
+  				<div id="education" style="overflow:auto;">
+  					<div class="col-md-3">
+  						<h4>Education:</h4>
+  					</div>
+  					<div class="col-md-6">
+  						<dl>
+  							<dt>Angelo State University, San Angelo, TX</dt>
+  							<dd>Bachelor of Science in Computer Science, May 2015</dd>
+  							<dd>minor in Mathematics</dd>
+  							<br/>
+  							<dt>Relevant Coursework:</dt>
+  							<dd>
+  								<ul>
+  									<li>Java Programming</li>
+  									<li>Data Structures and Algorithms</li>
+  									<li>Theory of Algorithms</li>
+  									<li>Web Database Design</li>
+  									<li>Database Design and Management</li>
+  									<li>Digital Electronic Design</li>
+  									<li>Technical Writing</li>
+  									<li>Discrete Mathematics</li>
+  									<li>Calculus</li>
+  								</ul>
+  							</dd>
+  						</dl>
+  					</div>
+  				</div>
+  				<hr/>
+  				<div id="work" style="overflow:auto;">
+  					<div class="col-md-3">
+  						<h4>Related Work Experience:</h4>
+  					</div>
+  					<div class="col-md-6">
+  						<dl>
+  							<dt><b>Programmer I</b></dt>
+  							<dd>Texas Ethics Commission - Austin, Texas</dd>
+  							<dd>(January 2016 - Present)</dd>
+  							<dd>
+  								<ul>
+  									<li>Provided technical support and data management.</li>
+  								</ul>
+  							</dd>
+  							<dt><b>Software Developer Intern</b></dt>
+  							<dd>Eduphoria - Austin, Texas</dd>
+  							<dd>(June 2015 - August 2015)</dd>
+  							<dd>
+  								<ul>
+  									<li>Eduphoria position description</li>
+  								</ul>
+  							</dd>
+  							<dt><b>Computer Science Tutor</b></dt>
+  							<dd>Angelo State University - San Angelo, Texas</dd>
+  							<dd>(September 2014 - May 2015)</dd>
+  							<dd>
+  								<ul>
+  									<li>Help students enhance their mastery of concepts and academic skills in Computer Science.</li>
+  								</ul>
+  							</dd>
+  						</dl>
+  					</div>
+  				</div>
+  				<hr/>
+  				<div id="awards" style="overflow:auto;">
+  					<div class="col-md-3">
+  						<h4>Awards and Recognition:</h4>
+  					</div>
+  					<div class="col-md-6">
+  						Charlie Wooten Grant - 2011 & 2013
+  						<br/>
+  						Cum Laude Honor, Mason High School - May 2011
+  					</div>
+  				</div>
+  			</div>
+      </div>
+		</div>
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+</body>
+</html>

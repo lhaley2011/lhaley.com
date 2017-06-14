@@ -1,0 +1,46 @@
+<!-- views/pages/projects.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head_tag_manager %>
+    <% include ../partials/head %>
+</head>
+<body>
+    <% include ../partials/header_tag_manager %>
+    <div id="navbar">
+        <% include ../partials/header %>
+    </div>
+    <div class="body">
+      <div class="content">
+        <div class='projects'>
+          <br>
+          <dl>
+            <ul>
+              <li>
+                <dt>lhaley.com</dt>
+                <dd>
+                  This site originally started as a SPA written in PHP and Javascript. The website has more recently been rewritten using a node framework, Express.js.
+                  <br>
+                  I am currently experimenting with .NET Core as a RESTful API for this site. This API will allow me to add a contact page and some other test pages.
+                </dd>
+              </li>
+              <br>
+              <li>
+                <dt>Network Monitoring</dt>
+                <dd>Implimented a network monitor and alert tool using SNMP with Observium.</dd>
+              </li>
+              <br>
+              <li>
+                <dt>Performance Monitoring</dt>
+                <dd>Researched and implimented a collection of monitoring tools. The tools used were Riemann, Graphite, and Grafana.</dd>
+              </li>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+</body>
+</html>
