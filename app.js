@@ -4,7 +4,7 @@
 var express = require('express');
 var app = express();
 
-var port = process.env.PORT || 8080;
+var port = 8080;
 
 // set the view engine to ejs
 app.set('views', __dirname  + '/' +'views');
@@ -47,4 +47,4 @@ app.get('/bitcoin', function(req, res) {
 app.use('/', express.static(__dirname + '/assets'));
 
 app.listen(port);
-console.log(port + ' is the magic port');
+console.log("App started, listening on port " + port);
