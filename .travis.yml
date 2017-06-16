@@ -6,9 +6,13 @@ node_js:
    - "iojs"
    - "node"
 before_install:
-   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" $DOCKER_REGISTRY
-   - docker build -t $DOCKER_USERNAME/$DOCKER_REPOSITORY .
-   - docker run -d -p 127.0.0.1:80:8080 --name docker-test $DOCKER_USERNAME/$DOCKER_REPOSITORY /bin/sh -c "cd /usr/src/app; npm start;"
-   - sleep 10 # wait 10 seconds before testing
-   - grep -P "true" <<< $(docker inspect -f {{.State.Running}} docker-test)
-   - docker ps -a
+   - docker build -t $DOCKER_USERNAME/$DOCKER_REPOSITORY .;
+   - docker run -d -p 127.0.0.1:80:8080 --name docker-test $DOCKER_USERNAME/$DOCKER_REPOSITORY /bin/sh -c "cd /usr/src/app; npm start;";
+   - sleep 10; # wait 10 seconds before testing
+   - grep -P "true" <<< $(docker inspect -f {{.State.Running}} docker-test);
+   - docker ps -a;
+after_success:
+   - if [ "$TRAVIS_BRANCH" == "master" ]; then
+     docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" $DOCKER_REGISTRY;
+     #docker push $DOCKER_USERNAME/$DOCKER_REPOSITORY;
+     fi
