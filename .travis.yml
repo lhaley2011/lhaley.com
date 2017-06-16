@@ -7,7 +7,6 @@ node_js:
    - "node"
 before_install:
    - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" $DOCKER_REGISTRY
-   - docker info
    - docker build -t lhaley2011/lhaley.com .
    - docker run -d -p 127.0.0.1:80:8080 lhaley2011/lhaley.com /bin/sh -c "cd /usr/src/app; npm start;"
    - docker ps -a
