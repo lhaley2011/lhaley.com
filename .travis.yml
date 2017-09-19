@@ -3,7 +3,7 @@ language: node_js
 services:
    - docker
 node_js:
-   - "iojs"
+#   - "iojs"
    - "node"
 before_install:
    - docker build -t $DOCKER_USERNAME/$DOCKER_REPOSITORY .;
