@@ -6,10 +6,14 @@ html {
 header {
 	background-color: #353535;
 	margin-left: auto;
-  margin-right: auto;
+	margin-right: auto;
 	text-align: center;
 	width: 100%;
 	border-radius: 4px 4px 4px 4px;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
 }
 
 body {
@@ -25,10 +29,26 @@ footer {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
+	vertical-align: middle;
 	color: white;
 	height: 40px;
 	line-height: 40px;
 	width: 98.5%;
+	padding-top: 10px;
+}
+footer a {
+	color: white;
+}
+
+footer a:hover {
+	color: white;
+}
+
+footer .fa-border {
+	border-color: #9d9d9d;
+}
+footer .fa-border:hover {
+	border-color: white;
 }
 
 div.body {
@@ -57,7 +77,7 @@ div.content {
 }
 
 .navbar .navbar-nav {
-  display: inline-block;
+  // display: inline-block;
   float: none;
   vertical-align: top;
 }
