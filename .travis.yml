@@ -2,9 +2,9 @@ sudo: required
 language: node_js
 services:
    - docker
-node_js:
+#node_js:
 #   - "iojs"
-   - "node"
+#   - "node"
 before_install:
    - docker build -t $DOCKER_USERNAME/$DOCKER_REPOSITORY .;
    - docker run -d -p 127.0.0.1:80:8080 --name docker-test $DOCKER_USERNAME/$DOCKER_REPOSITORY /bin/sh -c "cd /usr/src/app; npm start;";
